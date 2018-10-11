@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Download profile photo of any public or private Instagram account by the username. It isn't obligatory to sign in with Instagram.">
+    <meta name="author" content="Keval Navadiya">
+    <title>instaDP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/main.js" language="javascript"></script>
+    <style>
+        .loader {
+        margin-left: auto;
+        margin-right: auto;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
+         @media screen and (max-width: 450px) {
+             .dp_img{
+                 width: 100%;
+             }
+         }
+    </style>
+</head>
+<body>
+    <div class="temp-container"></div>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <div class="container">
+                <h1 class="page-header">InstaDP</h1>
+                <p class="title-p">Get Anyone’s Instagram Profile Picture or Images at Full Size!</p>
+                <a class="btn btn-primary" href="#info">How To Download</a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-1 col-lg-2 col-xl-2 mx-auto"></div>
+            <div class="col-md-10 col-lg-8 col-xl-8 mx-auto">
+                <div class="form-group required">
+                    <h3 class="control-label" for="input1">Username: </h3>
+                    <input type="text" class="form-control id not-null" id="input1" placeholder="Enter instagram username" required>
+                </div>
+                <button class="btn btn-primary search">Search</button>
+            </div>
+        </div>
+        <div class="row op-img text-center" style="margin-top: 20px;"></div>
+        <div class="row"><div class="loader"></div></div>
+        <div class="row" style="margin-bottom:50px;">
+            <div class="container">
+                <h3 id="info"><b>How To Download Instagram Profile Picture In Full Size?</b></h3>
+                <ul>
+                <li>First open Instagram website.</li>
+                <li>Open the instagram profile of the user whose profile picture you want to download.</li>
+                <li>Copy the Username of that user from URL.</li>
+                <li>Paste it in above given form.</li>
+                <li>Click Search.</li>
+                <li>Click Download to download it.</li>
+                </ul>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                <div class="container">
+                        <div class="pull-left row" style="margin-left:5px;">
+                            <p class="navbar-text">Created by : Keval Navadiya</p>
+                        </div>
+                        <div class="pull-right">
+                            <a href="https://www.instagram.com/keval_navadiya_/"><i class="fab fa-instagram fa-3x"></i></a>
+        
+                        </div>
+                </div>
+            </nav>                
+        </div>
+    </div>
+</body>
+</html>
